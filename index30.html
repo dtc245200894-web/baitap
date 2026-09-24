@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    color: white;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+}
+
+.services {
+    text-align: center;
+    padding: 50px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background-color: #ddd;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+@media (max-width: 768px) {
+    .nav ul {
+        display: none;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}
+
+</style>
+<body>
+    <header class="header">
+        <div class="logo">MyBrand</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Chào mừng đến với MyBrand</h1>
+        <p>Giải pháp số 1 cho doanh nghiệp của bạn</p>
+        <a href="#services" class="btn">Tìm hiểu thêm</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Dịch vụ của chúng tôi</h2>
+        <div class="service-container">
+            <div class="service">Thiết kế web</div>
+            <div class="service">Phát triển phần mềm</div>
+            <div class="service">Marketing số</div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Khách hàng nói gì?</h2>
+        <div class="testimonial">"Dịch vụ tuyệt vời!" - Khách hàng A</div>
+        <div class="testimonial">"Tôi rất hài lòng với MyBrand." - Khách hàng B</div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 MyBrand. All rights reserved.</p>
+    </footer>
+</body>
+</html>
