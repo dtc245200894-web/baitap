@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form Bài Tập</title>
+</head>
+<body>
+
+    <!-- PHẦN 1 -->
+    <h2>Phần 1: Form thông tin cá nhân và sở thích</h2>
+    <form>
+        Họ và tên: <input type="text" name="yourname"><br><br>
+        Email: <input type="email" name="email"><br><br>
+        
+        Sở thích:
+        <input type="checkbox" name="hobby" value="reading"> Đọc sách
+        <input type="checkbox" name="hobby" value="sports"> Thể thao
+        <input type="checkbox" name="hobby" value="music"> Nghe nhạc
+        <br><br>
+
+        <input type="submit" value="Gửi thông tin">
+        <input type="reset" value="Nhập lại">
+    </form>
+
+    <hr>
+
+    <!-- PHẦN 2 -->
+    <h2>Phần 2: Form đăng ký học viên</h2>
+    <form>
+        Họ và tên học viên: <input type="text" name="fullName"><br><br>
+        Email liên hệ: <input type="email" name="studentEmail"><br><br>
+        Số điện thoại: <input type="text" name="phoneNumber"><br><br>
+        
+        Khóa học:
+        <select name="course">
+            <option value="html">HTML/CSS cơ bản</option>
+            <option value="js">JavaScript</option>
+        </select>
+        <br><br>
+
+        Giới tính:
+        <input type="radio" name="gender" value="male"> Nam
+        <input type="radio" name="gender" value="female"> Nữ
+        <br><br>
+
+        <input type="submit" value="Đăng ký">
+        <input type="reset" value="Làm lại">
+    </form>
+
+</body>
+</html>
