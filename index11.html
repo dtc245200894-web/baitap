@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ví dụ về Danh sách trong CSS</title>
+    <style>
+        .custom-list-1 {
+            color: darkblue;
+            list-style-type: square;
+            list-style-position: outside;
+        }
+
+        .custom-list-2 {
+            list-style: upper-roman inside;
+        }
+
+        .highlight-item {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>1. Danh sách không có thứ tự (ul) với list-style-type và đổi màu toàn danh sách</h2>
+    <ul class="custom-list-1">
+        <li>Phần tử thứ nhất</li>
+        <li>Phần tử thứ hai</li>
+        <li class="highlight-item">Phần tử thứ ba (được định kiểu riêng ở thẻ li)</li>
+    </ul>
+
+    <h2>2. Danh sách có thứ tự (ol) sử dụng thuộc tính rút gọn (list-style)</h2>
+    <ol class="custom-list-2">
+        <li>Bước một: Chuẩn bị tài liệu</li>
+        <li>Bước hai: Viết mã nguồn HTML/CSS</li>
+        <li>Bước ba: Kiểm tra và hoàn thiện</li>
+    </ol>
+
+</body>
+</html>
