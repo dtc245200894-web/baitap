@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lịch họp công ty</title>
+    <style>
+        /* CSS đơn giản để hiển thị viền bảng */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px 12px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lịch họp công ty</h1>
+
+    <table>
+        <tr>
+            <th>Ngày</th>
+            <th>Giờ</th>
+            <th>Nội dung cuộc họp</th>
+        </tr>
+        
+        <!-- Ngày thứ nhất: Có 2 cuộc họp -> Dùng rowspan="2" cho cột Ngày -->
+        <tr>
+            <td rowspan="2">Thứ Hai (15/06)</td>
+            <td>08:00 - 09:30</td>
+            <td>Họp giao ban tuần đầu tháng</td>
+        </tr>
+        <tr>
+            <td>14:00 - 16:00</td>
+            <td>Triển khai kế hoạch dự án mới</td>
+        </tr>
+
+        <!-- Ngày thứ hai: Cuộc họp kéo dài toàn bộ thời gian -> Dùng colspan="2" -->
+        <tr>
+            <td>Thứ Ba (16/06)</td>
+            <td colspan="2">Toàn công ty đi dã ngoại (Cả ngày)</td>
+        </tr>
+
+        <!-- Ngày thứ ba: Cuộc họp bình thường -->
+        <tr>
+            <td>Thứ Tư (17/06)</td>
+            <td>09:00 - 11:00</td>
+            <td>Đánh giá tiến độ công việc quý</td>
+        </tr>
+    </table>
+
+</body>
+</html>
