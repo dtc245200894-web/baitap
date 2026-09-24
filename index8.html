@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Research Survey</title>
+</head>
+<body>
+
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+
+    <form>
+        <!-- Câu 1 -->
+        <label>What is your age range?</label><br>
+        <select name="age_range">
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-50">35-50</option>
+        </select>
+        <br><br>
+
+        <!-- Câu 2 -->
+        <label>What is your yearly income range?</label><br>
+        <select name="income_range">
+            <option value="0-25k">$0 - $25,000</option>
+            <option value="25k-50k">$25,000 - $50,000</option>
+        </select>
+        <br><br>
+
+        <!-- Câu 3 -->
+        <label>Gender Identity</label><br>
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Nonbinary"> Nonbinary<br>
+        <input type="radio" name="gender" value="Other"> Other 
+        <input type="text" name="gender_other">
+        <br><br>
+
+        <!-- Câu 4 -->
+        <label>Which of the following products have your purchased in the last 2 months. Please check all that apply.</label><br>
+        <input type="checkbox" name="products" value="Product 1"> Product 1<br>
+        <input type="checkbox" name="products" value="Product 2"> Product 2<br>
+        <input type="checkbox" name="products" value="Product 3"> Product 3
+        <br><br>
+
+        <!-- Câu 5 -->
+        <label>How often would you use our new product?</label><br>
+        <input type="radio" name="frequency" value="Daily"> Daily<br>
+        <input type="radio" name="frequency" value="Weekly"> Weekly<br>
+        <input type="radio" name="frequency" value="Monthly"> Monthly
+        <br><br>
+
+        <!-- Câu 6 -->
+        <label>What would you pay for the new product?</label><br>
+        $ <input type="text" name="dollars" size="5"> . <input type="text" name="cents" size="2"><br>
+        <small>Dollars &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cents</small>
+
+    </form>
+
+</body>
+</html>
