@@ -1,0 +1,92 @@
+/* Thiết lập chung để xóa khoảng cách mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    
+    /* Sử dụng Flexbox để cố định Footer luôn nằm ở đáy màn hình */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 1. Header Styling */
+.site-header {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. Navigation Menu Styling */
+.site-nav {
+    background-color: #34495e;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav li {
+    margin: 0 15px;
+}
+
+.site-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 12px 10px;
+    font-weight: bold;
+}
+
+.site-nav a:hover {
+    color: #3498db;
+}
+
+/* 3. Content Section Styling */
+.site-content {
+    flex: 1; /* Giúp đẩy footer xuống dưới khi nội dung ngắn */
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.site-content h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.site-content p {
+    margin-bottom: 20px;
+}
+
+/* Khung giả lập hình ảnh */
+.image-placeholder {
+    background-color: #e2e8f0;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: #718096;
+    font-style: italic;
+}
+
+/* 4. Footer Styling */
+.site-footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
