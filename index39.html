@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap; /* Cho phép các ô tự động xuống dòng khi hết chỗ */
+            gap: 10px;
+            background: #f1f1f1;
+            padding: 10px;
+        }
+        .flex-item {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 200px; /* Mỗi ô rộng tối thiểu 200px */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">Ô 1</div>
+        <div class="flex-item">Ô 2</div>
+        <div class="flex-item">Ô 3</div>
+        <div class="flex-item">Ô 4</div>
+    </div>
+
+</body>
+</html>
