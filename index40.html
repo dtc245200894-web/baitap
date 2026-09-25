@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ Flex-basis</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            background-color: #f1f1f1;
+            padding: 15px;
+        }
+
+        .flex-item {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            
+          
+            flex-basis: 250px; 
+            
+         
+            flex: 1 1 250px; 
+        }
+
+       
+        .item-dac-biet {
+            background-color: #e74c3c;
+            flex-basis: 400px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1 (basis: 250px)</div>
+        <div class="flex-item">Item 2 (basis: 250px)</div>
+        <div class="flex-item item-dac-biet">Item 3 (basis: 400px)</div>
+        <div class="flex-item">Item 4 (basis: 250px)</div>
+    </div>
+
+</body>
+</html>
