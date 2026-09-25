@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tạo sẵn 3 cột */
+            gap: 10px;
+            background: #f1f1f1;
+            padding: 10px;
+        }
+        .item {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Ép ô này bắt đầu từ đường line cột số 2 */
+        .item-dac-biet {
+            grid-column-start: 2; 
+            background: #e74c3c; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="item">Ô 1</div>
+        <div class="item item-dac-biet">Ô 2 (Bắt đầu từ line 2)</div>
+        <div class="item">Ô 3</div>
+    </div>
+
+</body>
+</html>
