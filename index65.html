@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Facebook giản lược</title>
+    <style>
+        /* Thiết lập chung */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #050505;
+            padding-top: 60px; /* Đẩy nội dung xuống tránh bị header che mất vì header dùng position: fixed */
+        }
+
+        /* 1. Fixed Header ở trên cùng */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .header-left {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1877f2;
+        }
+
+        .header-search input {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            background-color: #f0f2f5;
+            width: 240px;
+            outline: none;
+        }
+
+        .header-right {
+            font-weight: bold;
+            color: #65676b;
+        }
+
+        /* Khung chứa bố cục chính */
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        /* 2. Các phần Sidebar (Trái và Phải) */
+        .sidebar-left, .sidebar-right {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            height: calc(100vh - 100px);
+            position: sticky;
+            top: 80px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-left ul, .sidebar-right ul {
+            list-style: none;
+        }
+
+        .sidebar-left li, .sidebar-right li {
+            padding: 10px 0;
+            cursor: pointer;
+            color: #050505;
+            font-weight: 500;
+        }
+
+        .sidebar-left li:hover, .sidebar-right li:hover {
+            background-color: #f2f2f2;
+            border-radius: 4px;
+        }
+
+        /* 3. Phần nội dung chính ở giữa */
+        .content-center {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .post-box, .feed-post {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-box input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: none;
+            background-color: #f0f2f5;
+            outline: none;
+        }
+
+        .feed-post h4 {
+            margin-bottom: 8px;
+            color: #050505;
+        }
+
+        .feed-post p {
+            color: #65676b;
+            font-size: 14px;
+        }
+
+        /* Responsive cho màn hình nhỏ */
+        @media (max-width: 768px) {
+            .sidebar-left, .sidebar-right {
+                display: none;
+            }
+            .content-center {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Fixed Header -->
+    <header>
+        <div class="header-left">facebook</div>
+        <div class="header-search">
+            <input type="text" placeholder="Tìm kiếm trên Facebook">
+        </div>
+        <div class="header-right">Tài khoản</div>
+    </header>
+
+    <!-- Khung bọc giao diện chính -->
+    <div class="main-container">
+        
+        <!-- 2. Sidebar Trái -->
+        <div class="sidebar-left">
+            <h3>Lối tắt</h3>
+            <ul>
+                <li>👤 Trang cá nhân</li>
+                <li>👥 Bạn bè</li>
+                <li>🔖 Đã lưu</li>
+                <li>⏰ Kỷ niệm</li>
+            </ul>
+        </div>
+
+        <!-- 3. Phần Nội dung chính -->
+        <div class="content-center">
+            <!-- Khung đăng bài -->
+            <div class="post-box">
+                <input type="text" placeholder="Bạn đang nghĩ gì thế?">
+            </div>
+
+            <!-- Bài viết trên bảng tin -->
+            <div class="feed-post">
+                <h4>Nguyễn Văn A</h4>
+                <p>Hôm nay trời đẹp quá, cùng nhau ôn tập lập trình web nào các bạn ơi! 🚀</p>
+            </div>
+
+            <div class="feed-post">
+                <h4>Trần Thị B</h4>
+                <p>Vừa hoàn thành xong bài tập layout với CSS Flexbox và Position Fixed. Thật thú vị! ✨</p>
+            </div>
+        </div>
+
+        <!-- 2. Sidebar Phải -->
+        <div class="sidebar-right">
+            <h3>Người liên hệ</h3>
+            <ul>
+                <li>🟢 Nguyễn Văn C</li>
+                <li>🟢 Lê Thị D</li>
+                <li>🟢 Hoàng Văn E</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
