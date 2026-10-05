@@ -1,4 +1,4 @@
-/* Thiết lập chung để xóa khoảng cách mặc định của trình duyệt */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +11,13 @@ body {
     color: #333;
     background-color: #f9f9f9;
     
-    /* Sử dụng Flexbox để cố định Footer luôn nằm ở đáy màn hình */
+   
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* 1. Header Styling */
+
 .site-header {
     background-color: #2c3e50;
     color: #ffffff;
@@ -25,7 +25,7 @@ body {
     text-align: center;
 }
 
-/* 2. Navigation Menu Styling */
+
 .site-nav {
     background-color: #34495e;
 }
@@ -52,9 +52,9 @@ body {
     color: #3498db;
 }
 
-/* 3. Content Section Styling */
+
 .site-content {
-    flex: 1; /* Giúp đẩy footer xuống dưới khi nội dung ngắn */
+    flex: 1; 
     max-width: 800px;
     margin: 30px auto;
     padding: 0 20px;
@@ -70,7 +70,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Khung giả lập hình ảnh */
+
 .image-placeholder {
     background-color: #e2e8f0;
     height: 250px;
@@ -82,7 +82,7 @@ body {
     font-style: italic;
 }
 
-/* 4. Footer Styling */
+
 .site-footer {
     background-color: #2c3e50;
     color: #ffffff;
