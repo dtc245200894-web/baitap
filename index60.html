@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đọc Truyện</title>
+    <!-- Bước 6: Nhúng file styles.css vào trang HTML -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Thiết lập chung cho trang web */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Bước 7: Định dạng font chữ, màu sắc và căn giữa cho tiêu đề truyện */
+.story-title {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Bước 4: Định dạng khung chứa ảnh truyện ở đầu trang */
+.banner-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.story-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bước 8: Định dạng khối mục lục (khung viền border, màu nền background-color, khoảng đệm padding) */
+.toc-box {
+    background-color: #ffffff;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    padding: 15px 25px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.toc-box h3 {
+    margin-top: 0;
+    color: #2f3640;
+    border-bottom: 2px solid #f1f2f6;
+    padding-bottom: 8px;
+}
+
+.toc-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc-box li {
+    margin: 10px 0;
+}
+
+/* Loại bỏ kiểu mặc định của thẻ h5 bên trong mục lục và định dạng liên kết */
+.toc-box h5 {
+    display: inline;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.toc-box a {
+    color: #0097e6;
+    text-decoration: none; /* Bước 8: Tùy chỉnh text-decoration */
+    transition: color 0.2s ease;
+}
+
+/* Bước 8: Tạo hiệu ứng hover cho các liên kết */
+.toc-box a:hover {
+    color: #e84118;
+    text-decoration: underline;
+}
+
+/* Định dạng khu vực nội dung truyện */
+.content-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.content-box section {
+    margin-bottom: 40px;
+}
+
+.content-box h2 {
+    color: #2f3640;
+    border-bottom: 1px solid #f1f2f6;
+    padding-bottom: 5px;
+}
+
+/* Bước 9: Canh lề và giãn dòng cho các đoạn văn bản thân truyện */
+.content-box p {
+    line-height: 1.8;       /* Giãn dòng */
+    text-align: justify;    /* Canh lề đều hai bên */
+    text-indent: 30px;      /* Thụt lề đầu dòng */
+    color: #2f3640;
+    margin-bottom: 15px;
+}
+</style>
+<body>
+
+    <!-- Bước 4: Tạo ảnh truyện đặt ở đầu trang -->
+    <div class="banner-container">
+        <img src="story-banner.jpg" alt="Ảnh bìa truyện" class="story-image">
+    </div>
+
+    <!-- Tiêu đề truyện -->
+    <h1 class="story-title">Hành Trình Khám Phá Thế Giới</h1>
+
+    <!-- Bước 1 & Bước 3 & Bước 5: Tạo mục lục truyện sử dụng thẻ <h5> và tạo liên kết neo -->
+    <div class="toc-box">
+        <h3>Mục lục truyện</h3>
+        <ul>
+            <li><a href="#chuong1"><h5>Chương 1: Khởi đầu cuộc hành trình</h5></a></li>
+            <li><a href="#chuong2"><h5>Chương 2: Vượt qua thử thách</h5></a></li>
+            <li><a href="#chuong3"><h5>Chương 3: Hướng đến tương lai</h5></a></li>
+        </ul>
+    </div>
+
+    <!-- Bước 2: Tạo nội dung ứng với từng mục lục truyện -->
+    <div class="content-box">
+        <section id="chuong1">
+            <h2>Chương 1: Khởi đầu cuộc hành trình</h2>
+            <p>Vào một buổi sáng mùa thu trong xanh, ánh nắng vàng rực rỡ chiếu rọi qua từng tán lá, đánh thức cả khu làng nhỏ bé yên bình. Cậu thanh niên trẻ tuổi bước ra khỏi hiên nhà, trên vai mang theo chiếc balo sờn cũ chứa đầy những hoài bão và ước mơ tuổi trẻ. Đằng sau lưng là tiếng gọi với theo dặn dò đầy ân cần của người thân, phía trước là con đường đất dài dẫn vào cánh rừng huyền bí chưa từng có dấu chân người.</p>
+            <p>Cậu hít một hơi thật sâu, cảm nhận hương vị tươi mát của đất trời và tự nhủ rằng đây chính là khoảnh khắc quyết định để thay đổi số phận bản thân. Những thử thách nào đang chờ đón ở phía trước? Không ai biết trước được điều đó, nhưng ngọn lửa nhiệt huyết trong tim cậu thì chưa bao giờ tắt.</p>
+        </section>
+
+        <section id="chuong2">
+            <h2>Chương 2: Vượt qua thử thách</h2>
+            <p>Càng đi sâu vào trong rừng thẳm, sương mù càng dày đặc hơn, che lấp cả lối đi quen thuộc. Những âm thanh lạ lùng từ các bụi cây xung quanh vang lên khiến bất kỳ ai cũng phải chùn bước. Đã có lúc đôi chân mệt mỏi muốn dừng lại, cái lạnh buốt giá của màn đêm bắt đầu thấm dần qua lớp áo mỏng.</p>
+            <p>Nhưng nhớ lại mục tiêu ban đầu đã đặt ra, cậu nghiến răng vượt qua nỗi sợ hãi. Nhờ vào sự thông minh và những kỹ năng sinh tồn được học từ nhỏ, cậu tìm cách nhóm lên một đống lửa ấm áp, tìm thấy nguồn nước sạch và kiên nhẫn chờ đợi cho đến khi ánh bình minh ló dạng xua tan bóng tối.</p>
+        </section>
+
+        <section id="chuong3">
+            <h2>Chương 3: Hướng đến tương lai</h2>
+            <p>Vượt qua khu rừng tăm tối cũng là lúc đỉnh núi cao nhất hiện ra trước mắt, sừng sững uy nghiêm giữa mây trời. Đứng từ đỉnh cao phóng tầm mắt nhìn ra xa, toàn bộ khung cảnh thiên nhiên hùng vĩ thu trọn vào tầm mắt. Những giọt mồ hôi rơi xuống nay đã được đền đáp bằng niềm vui vỡ oà và sự trưởng thành trong tâm hồn.</p>
+            <p>Hành trình này không chỉ đơn thuần là việc đi đến một vùng đất mới, mà quan trọng hơn cả là cậu đã vượt qua được giới hạn của chính mình. Câu chuyện về lòng dũng cảm và ý chí kiên cường sẽ mãi là hành trang quý giá theo cậu bước tiếp trên những chặng đường tương lai.</p>
+        </section>
+    </div>
+
+</body>
+</html>
