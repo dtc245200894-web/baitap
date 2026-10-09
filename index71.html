@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn tạo Dropdown Menu Ngang</title>
+    <style>
+        /* 1. Cố định font chữ và thiết lập cơ bản cho trang */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 2. Cố định chiều cao, đường viền, khoảng cách và màu nền cho trình đơn (menu) */
+        #menu {
+            height: 40px;
+            background-color: #333;
+            width: 100%;
+        }
+
+        #menu ul, #menu li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* 3. Định nghĩa bộ chọn cho các phần tử trong danh sách (li) để hiển thị nằm ngang */
+        #menu > ul > li {
+            float: left;
+            position: relative;
+        }
+
+        /* 4. Định nghĩa cho các liên kết trong trình đơn (độ rộng, chiều cao, hiển thị, văn bản) */
+        #menu a {
+            display: block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* 5. Chuyển màu nền của liên kết sang màu đỏ khi đưa con trỏ qua (hover) */
+        #menu a:hover, #menu li:hover > a {
+            background-color: red;
+        }
+
+        /* 6. Định nghĩa vị trí hiển thị của danh sách con (trình đơn con) so với menu cha */
+        #menu ul ul {
+            position: absolute;
+            top: 40px; /* Nằm ngay bên dưới menu cha */
+            left: 0;
+            width: 120px;
+            background-color: #333;
+        }
+
+        /* Đảm bảo các mục trong menu con xếp dọc */
+        #menu ul ul li {
+            float: none;
+        }
+
+        /* 7. Thêm thuộc tính visibility để ẩn các danh sách con đi mặc định */
+        #menu ul ul {
+            visibility: hidden;
+        }
+
+        /* 8. Hiển thị danh sách con mỗi khi con trỏ được đưa qua mục chọn của trình đơn cha */
+        #menu li:hover > ul {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Máy tính bảng</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Dịch vụ</a>
+                <ul>
+                    <li><a href="#">Thiết kế web</a></li>
+                    <li><a href="#">Lập trình app</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
