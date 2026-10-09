@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGym Career - Định Hướng & Việc Làm Lập Trình Viên</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <!-- Custom CSS tùy chỉnh bổ trợ Material -->
+    <style>
+        :root {
+            --primary-color: #0d47a1; /* Xanh đặc trưng Material Blue */
+            --accent-color: #ff6f00;  /* Cam điểm nhấn */
+        }
+        
+        .navbar {
+            background-color: var(--primary-color) !important;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(13, 71, 161, 0.85), rgba(13, 71, 161, 0.9), rgba(13, 71, 161, 0.95)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+
+        .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+        }
+
+        .btn-custom-accent {
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: 500;
+            border-radius: 30px;
+            padding: 10px 25px;
+            box-shadow: 0 4px 10px rgba(255, 111, 0, 0.3);
+        }
+
+        .btn-custom-accent:hover {
+            background-color: #e65100;
+            color: white;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #b0bec5;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Navbar Material Design -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="#"><i class="fas fa-code mr-2"></i>CodeGym Career</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Lợi ích</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#courses">Chương trình</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cta-section">Liên hệ</a></li>
+                    </ul>
+                    <a href="#cta-section" class="btn btn-sm btn-custom-accent ml-3">Đăng ký ngay</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white mt-5">
+        <div class="container py-5">
+            <h1 class="display-4 font-weight-bold mb-4">Chuyển Ngành Lập Trình Viên &mdash; Cam Kết 100% Việc Làm</h1>
+            <p class="lead mb-5 mx-auto" style="max-width: 700px;">
+                Mô hình huấn luyện thực chiến cường độ cao (Coding Bootcamp) giúp bạn bứt phá từ con số 0 đến khi vững nghề chỉ trong vòng 20 tuần.
+            </p>
+            <a href="#cta-section" class="btn btn-custom-accent btn-lg m-2">Khám phá lộ trình ngay</a>
+        </div>
+    </section>
+
+    <!-- Main Content: Features / Cards -->
+    <main class="container py-5 my-4" id="features">
+        <h2 class="text-center section-title">Tại Sao Chọn CodeGym Career?</h2>
+        
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-150 p-4 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="text-primary mb-3">
+                            <i class="fas fa-briefcase fa-3x"></i>
+                        </div>
+                        <h4 class="card-title font-weight-bold">Cam Kết 100% Việc Làm</h4>
+                        <p class="card-text text-muted">Đảm bảo cơ hội nghề nghiệp ngay sau khi tốt nghiệp với sự hậu thuận từ mạng lưới hơn 200+ doanh nghiệp đối tác IT.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-150 p-4 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="text-primary mb-3">
+                            <i class="fas fa-bolt fa-3x"></i>
+                        </div>
+                        <h4 class="card-title font-weight-bold">Thực Chiến Tốc Độ Cao</h4>
+                        <p class="card-text text-muted">Học tập trung toàn thời gian với thời lượng 8 giờ/ngày, chú trọng thực hành dự án thực tế thay vì lý thuyết hàn lâm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-150 p-4 shadow-sm text-center">
+                    <div class="card-body">
+                        <div class="text-primary mb-3">
+                            <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                        </div>
+                        <h4 class="card-title font-weight-bold">Đồng Hành 1-Kèm-1</h4>
+                        <p class="card-text text-muted">Đội ngũ Mentor giàu kinh nghiệm cầm tay chỉ việc, hỗ trợ giải đáp thắc mắc chuyên môn trong suốt quá trình học.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Courses / Program Section -->
+    <section class="bg-white py-5 border-top" id="courses">
+        <div class="container py-4">
+            <h2 class="text-center section-title">Chương Trình Đào Tạo Tiêu Biểu</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Coding class" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h3 class="font-weight-bold mb-3 text-primary">Full-Stack Web Development</h3>
+                    <p class="text-muted mb-4">Chương trình toàn diện dành cho người bắt đầu từ con số 0. Trang bị kỹ năng từ Front-End (HTML, CSS, JavaScript, React/Angular) đến Back-End (Java/PHP/.NET) và cơ sở dữ liệu.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Thời gian: 20 - 24 tuần (Toàn thời gian)</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Phương pháp: Agile / Scrum trong phát triển phần mềm</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Hoàn thành đồ án lớn (Capstone Project) đưa vào Portfolio cá nhân</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action (CTA) Section -->
+    <section class="py-5 text-white text-center" id="cta-section" style="background-color: var(--primary-color);">
+        <div class="container py-4">
+            <h2 class="font-weight-bold mb-3">Sẵn Sàng Thay Đổi Sự Nghiệp Của Bạn?</h2>
+            <p class="lead mb-4 mx-auto" style="max-width: 600px;">Đăng ký tư vấn miễn phí ngay hôm nay để nhận lộ trình học tập chi tiết phù hợp với năng lực và mục tiêu cá nhân.</p>
+            <form class="form-inline justify-content-center mx-auto" style="max-width: 500px;" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký! CodeGym sẽ liên hệ lại sớm nhất.');">
+                <div class="md-form input-group w-100">
+                    <input type="text" class="form-control text-white border-white mb-3 mb-md-0" placeholder="Nhập số điện thoại hoặc email của bạn..." required>
+                    <div class="input-group-append">
+                        <button class="btn btn-custom-accent m-0 px-4" type="submit">Đăng ký ngay</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 CodeGym Career. Xây dựng theo phong cách Material Design.</p>
+            <p class="small text-muted mb-0">Hệ thống đào tạo lập trình hiện đại hàng đầu Việt Nam.</p>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+</html>
