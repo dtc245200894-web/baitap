@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Layout Responsive</title>
+    <style>
+        /* Thiết lập chung */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 1. Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* 2. Navigation / Menu */
+        nav {
+            background-color: #34495e;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* 3. Container chính chứa Sidebar và Content */
+        .main-container {
+            display: flex;
+            flex: 1;
+            margin: 10px;
+            gap: 10px;
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        aside h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside li {
+            margin-bottom: 10px;
+        }
+
+        aside a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        aside a:hover {
+            color: #3498db;
+        }
+
+        /* Content */
+        main {
+            background-color: #ffffff;
+            padding: 20px;
+            flex: 1;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        main h2 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        main p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        /* 4. Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* === RESPONSIVE DESIGN (Tự động co giãn theo màn hình) === */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column; /* Chuyển từ hàng ngang sang xếp dọc trên màn hình nhỏ / điện thoại */
+                margin: 5px;
+                gap: 5px;
+            }
+
+            aside {
+                width: 100%; /* Sidebar chiếm toàn bộ chiều rộng khi ở trên mobile */
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        Header Website
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Phần bố cục chính gồm Sidebar và Nội dung -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside>
+            <h3>Danh mục</h3>
+            <ul>
+                <li><a href="#">Mục 1</a></li>
+                <li><a href="#">Mục 2</a></li>
+                <li><a href="#">Mục 3</a></li>
+                <li><a href="#">Mục 4</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h2>Nội dung chính</h2>
+            <p>Đây là khu vực nội dung chính của trang web. Bố cục sử dụng các thẻ &lt;div&gt; kết hợp với CSS Flexbox để đảm bảo tính linh hoạt và dàn trang gọn gàng.</p>
+            <p>Khi thay đổi kích thước trình duyệt hoặc xem trên các thiết bị di động (tablet, điện thoại), bố cục sẽ tự động co giãn và chuyển đổi linh hoạt nhờ vào tính năng Responsive Design.</p>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về bạn. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
